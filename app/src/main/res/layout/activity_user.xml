@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Code.UserActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_menuapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menuapp"
+        tools:ignore="InvalidId"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/id_usuario"
+        android:layout_width="149dp"
+        android:layout_height="81dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_usuarios"
+        android:name="com.example.sis_seg_retail_1.Code.UsuariosFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="199dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
