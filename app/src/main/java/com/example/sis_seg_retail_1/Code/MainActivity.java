@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(cambiarAct);
 
                     } else {
-                        Toast.makeText(MainActivity.this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Usuario y/o Contraseña incorrecta", Toast.LENGTH_SHORT).show();
                     }
 
                 } else {

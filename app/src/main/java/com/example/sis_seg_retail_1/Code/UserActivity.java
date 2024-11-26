@@ -38,9 +38,9 @@ public class UserActivity extends AppCompatActivity {
             return insets;
         });
 
-        datoUsuario = findViewById(R.id.id_usuario);
-        Usuario = getIntent().getStringExtra("Usuario");
-        datoUsuario.setText(Usuario);
+       datoUsuario = findViewById(R.id.id_usuario);
+       Usuario = getIntent().getStringExtra("Usuario");
+       datoUsuario.setText(Usuario);
 
         fcv_usuarios = findViewById(R.id.fcv_usuarios);
         bnv_menu = findViewById(R.id.bnv_menuapp);

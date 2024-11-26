@@ -21,11 +21,12 @@
 
     <TextView
         android:id="@+id/id_usuario"
-        android:layout_width="149dp"
-        android:layout_height="81dp"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnv_menuapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <androidx.fragment.app.FragmentContainerView

@@ -6,6 +6,7 @@ import com.example.sis_seg_retail_1.Models.DtoRespuestaLogin;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 public interface RetrofitService {
@@ -14,5 +15,5 @@ public interface RetrofitService {
     Call<DtoRespuestaLogin> login(@Body DtoLogin log);
 
     @GET("usuario/Usuario")
-    Call<DtoRespuestaLogin> Usuario();
+    Call<DtoRespuestaLogin> consultarUsuario(@Header("Authorization")String Usuario);
 }

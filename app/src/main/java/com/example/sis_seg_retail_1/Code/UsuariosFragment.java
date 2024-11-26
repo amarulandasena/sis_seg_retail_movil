@@ -23,6 +23,7 @@ import retrofit2.Response;
 
 public class UsuariosFragment extends Fragment {
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
